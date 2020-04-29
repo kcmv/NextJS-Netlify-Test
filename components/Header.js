@@ -1,17 +1,5 @@
-import Posts from "../data/posts.json"
-import Link from "next/link"
 import Head from "next/head"
-import {
-  Nav,
-  Container,
-  Row,
-  Col,
-  Navbar,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap"
+import { Container, Navbar, Form, FormControl, Button } from "react-bootstrap"
 
 const Header = () => {
   return (
@@ -31,15 +19,6 @@ const Header = () => {
           <Navbar.Brand href="/">Homepage</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              {Posts.map((item, key) => {
-                return (
-                  <Nav.Link href={`/post/${item.id}`} key={item.id}>
-                    {item.title}
-                  </Nav.Link>
-                )
-              })}
-            </Nav>
             <Form inline>
               <FormControl
                 type="text"

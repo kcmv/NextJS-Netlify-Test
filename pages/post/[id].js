@@ -6,6 +6,7 @@ import { Container, Row, Col, Alert } from "react-bootstrap"
 
 const PostID = () => {
   const { query } = useRouter()
+
   let PostItem = []
   if (query.id) {
     for (let i = 0; i < Posts.length; i += 1) {
