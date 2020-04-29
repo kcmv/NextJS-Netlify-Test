@@ -4,8 +4,8 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      "/": { page: "/" },
-      "/post/[id]": { page: "/post/[id]" },
+      "/": { page: "/index.js" },
+      "/post/:id": { page: "/post/[id].js" },
       // etc...
     }
   },
