@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Link from "next/link"
 import Posts from "../../data/posts.json"
-import Layout from "../../components/Layout"
+import Layout from "../../components/Layout/index.js"
 import { Container, Row, Col, Alert } from "react-bootstrap"
 
 const PostID = () => {
