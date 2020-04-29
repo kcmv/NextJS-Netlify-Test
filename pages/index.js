@@ -13,7 +13,7 @@ const Homepage = ({ posts }) => {
             {posts.map((item, key) => {
               return (
                 <Alert key={item.id} variant={"primary"}>
-                  <Link href={{ pathname: `posts/${item.id}` }}>
+                  <Link href="/post/[id]" as={`/post/${item.id}`}>
                     <a>{item.title}</a>
                   </Link>
                 </Alert>
