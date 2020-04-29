@@ -1,4 +1,4 @@
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { Container, Row, Col, Alert } from "react-bootstrap"
 
 const Homepage = () => {
