@@ -5,7 +5,7 @@ module.exports = {
   ) {
     return {
       "/": { page: "/" },
-      "/post/:id": { page: "/post/[id].js" },
+      "/post/[id]": { page: "/post/[id].js" },
       // etc...
     }
   },
