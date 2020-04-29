@@ -6,21 +6,21 @@ import { Container, Row, Col, Alert } from "react-bootstrap"
 const PostID = () => {
   const { query } = useRouter()
   console.log(query.id)
-  // let PostItem = []
-  // if (query.id) {
-  //   for (let i = 0; i < Posts.length; i += 1) {
-  //     if (Posts[i].id === parseInt(query.id)) {
-  //       PostItem.push(Posts[i])
-  //     }
-  //   }
-  // }
+  let PostItem = []
+  if (query.id) {
+    for (let i = 0; i < Posts.length; i += 1) {
+      if (Posts[i].id === parseInt(query.id)) {
+        PostItem.push(Posts[i])
+      }
+    }
+  }
 
   return (
     <Layout>
       <Container>
         <Row>
           <Col>
-            {/* {" "}
+            {" "}
             {PostItem.map((item, key) => {
               return (
                 <div key={key}>
@@ -28,7 +28,7 @@ const PostID = () => {
                   <Alert variant={"secondary"}>Title: {item.title}</Alert>
                 </div>
               )
-            })} */}
+            })}
           </Col>
         </Row>
       </Container>
