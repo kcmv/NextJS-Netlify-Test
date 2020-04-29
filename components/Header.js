@@ -34,7 +34,9 @@ const Header = () => {
             <Nav className="mr-auto">
               {Posts.map((item, key) => {
                 return (
-                  <Nav.Link href={`/post/${item.id}`}>{item.title}</Nav.Link>
+                  <Nav.Link href={`/post/${item.id}`} key={item.id}>
+                    {item.title}
+                  </Nav.Link>
                 )
               })}
             </Nav>

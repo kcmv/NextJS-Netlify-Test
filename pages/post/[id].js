@@ -23,20 +23,10 @@ const PostID = () => {
             {" "}
             {PostItem.map((item, key) => {
               return (
-                <>
-                  <Alert
-                    key={`${item.id}-${new Date().getSeconds()}`}
-                    variant={"primary"}
-                  >
-                    ID: {item.id}
-                  </Alert>
-                  <Alert
-                    key={`${item.id}-${new Date().getSeconds()}`}
-                    variant={"secondary"}
-                  >
-                    Title: {item.title}
-                  </Alert>
-                </>
+                <div key={key}>
+                  <Alert variant={"primary"}>ID: {item.id}</Alert>
+                  <Alert variant={"secondary"}>Title: {item.title}</Alert>
+                </div>
               )
             })}
           </Col>
